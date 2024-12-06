@@ -16,13 +16,14 @@ let winpattern = [
     [6, 7, 8]
 ];
 
-let click = 0
+let click = 0;
 
 const boxenable = () => {
     for(let btn of box ){
         btn.disabled = false;
         btn.innerText = "";
         turnX = true;
+        click = 0;
     }
     winmessage.classList.add("hide");
 }
