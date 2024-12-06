@@ -1,5 +1,6 @@
 let box = document.querySelectorAll(".b");
-let reset = document.querySelector(".fbutton");
+let reset = document.querySelector(".reset-game");
+let newgame = document.querySelector(".new-game");
 let announce = document.querySelector(".announce");
 let winmessage = document.querySelector(".msg");
 
@@ -16,14 +17,14 @@ let winpattern = [
     [6, 7, 8]
 ];
 
-let click = 0;
+let click = 0
 
 const boxenable = () => {
     for(let btn of box ){
         btn.disabled = false;
         btn.innerText = "";
         turnX = true;
-        click = 0;
+        click = 0
     }
     winmessage.classList.add("hide");
 }
@@ -73,4 +74,5 @@ const checkWinner = () => {
     }
 }
 
+newgame.addEventListener("click", boxenable);
 reset.addEventListener("click", boxenable);
