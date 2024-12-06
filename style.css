@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: rgb(25, 0, 255);
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header{
+    font-size: 2rem;
+    color: rgb(255, 193, 193);
+}
+
+button{
+    background-color: rgb(41, 135, 250);
+    border: none;
+    font-size: bolder;
+    color: rgb(255, 196, 196);
+}
+
+.announce{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(87, 0, 138);
+    border-radius: 20px;
+    font-weight: bolder;
+    color: rgb(95, 255, 202);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.game{
+    display: flex;
+    flex-direction: row;
+}
+
+.b{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+}
+.fbutton{
+    height: 40px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+    font-weight: bolder;
+}
+
+.msg{
+    color: rgb(95, 255, 202);
+    font-size: 1.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+button:active{
+    transform: scale(0.98);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.24);
+}
